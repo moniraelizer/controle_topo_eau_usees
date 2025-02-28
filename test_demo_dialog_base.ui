@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>demoiraDialogBase</class>
+ <widget class="QDialog" name="demoiraDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1072</width>
+    <height>843</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>testdemo</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1051</width>
+     <height>821</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>401</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Ponctuels</string>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>40</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Regards</string>
+      </property>
+     </widget>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox_3">
+      <property name="geometry">
+       <rect>
+        <x>189</x>
+        <y>30</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>110</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Boites de branchement</string>
+      </property>
+     </widget>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox_5">
+      <property name="geometry">
+       <rect>
+        <x>191</x>
+        <y>80</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>47</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ouvrages</string>
+      </property>
+     </widget>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox_4">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>140</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>401</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Liinéaires</string>
+     </property>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>130</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>63</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Canalisations</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>130</y>
+        <width>123</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Linéaires de Branchement</string>
+      </property>
+     </widget>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox">
+      <property name="geometry">
+       <rect>
+        <x>201</x>
+        <y>30</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QgsFieldComboBox" name="mFieldComboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>60</y>
+        <width>81</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>231</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sélectionner l'identifiant unique des canalisations</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="allcontrol">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>710</y>
+       <width>151</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lancer tous les contrôles</string>
+     </property>
+    </widget>
+    <widget class="QDialogButtonBox" name="button_box">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>750</y>
+       <width>156</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_3">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>60</y>
+       <width>291</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler la connectivité des canalisations</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>150</y>
+       <width>291</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler l'accrochage des regards aux canalisations</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>110</y>
+       <width>291</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler l'accrochage des linéaires de branchement</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_4">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>190</y>
+       <width>241</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler les géométries nulles et invalides</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_5">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>240</y>
+       <width>401</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler les doublons géométrique, les superpositions et les auto-intersections</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="but_6">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>280</y>
+       <width>291</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler l'accrochage des boites de branchement</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ecoul">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>261</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Contrôler le sens d'écoulement des canalisations</string>
+     </property>
+    </widget>
+    <widget class="QgsFieldComboBox" name="mFieldComboBox">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>450</y>
+       <width>160</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QgsFieldExpressionWidget" name="mFieldExpressionWidget">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>450</y>
+       <width>200</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>520</y>
+       <width>861</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Vérification de la classe A</string>
+     </property>
+     <widget class="QgsMapLayerComboBox" name="mMapLayerComboBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>160</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QgsFieldExpressionWidget" name="mFieldExpressionWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>200</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="classe">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>30</y>
+        <width>151</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Controler la classe</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFieldComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsfieldcombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsFieldExpressionWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfieldexpressionwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsmaplayercombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>demoiraDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>772</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>demoiraDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>772</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mMapLayerComboBox_3</sender>
+   <signal>layerChanged(QgsMapLayer*)</signal>
+   <receiver>mFieldComboBox</receiver>
+   <slot>setLayer(QgsMapLayer*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>496</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mMapLayerComboBox_3</sender>
+   <signal>layerChanged(QgsMapLayer*)</signal>
+   <receiver>mFieldExpressionWidget</receiver>
+   <slot>setLayer(QgsMapLayer*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>654</x>
+     <y>493</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mMapLayerComboBox</sender>
+   <signal>layerChanged(QgsMapLayer*)</signal>
+   <receiver>mFieldComboBox_2</receiver>
+   <slot>setLayer(QgsMapLayer*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mMapLayerComboBox_6</sender>
+   <signal>layerChanged(QgsMapLayer*)</signal>
+   <receiver>mFieldExpressionWidget_2</receiver>
+   <slot>setLayer(QgsMapLayer*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>579</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
